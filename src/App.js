@@ -46,7 +46,7 @@ const verifyLogin =async()=>{
       <Route exact path='/App/WorldInfo'>
       <Home list={covidList} token={token}/>
       </Route>
-      <Route exact path='/login'>
+      <Route exact path='/'>
       <Login  login={login}/>
       </Route>
 
