@@ -38,26 +38,26 @@ const verifyLogin =async()=>{
     <div className="App">
       <h1>hola</h1>
     <Router>
-    <Route  path='/App'>
+    <Route  path= {process.env.PUBLIC_URL+ '/App'}>
       <Navigation/>
       </Route>
-      <Route  path='/App/Home'>
+      <Route  path={process.env.PUBLIC_URL+ '/App/Home'}>
       <Header/>
       </Route>
-      <Route exact path='/App/WorldInfo'>
+      <Route exact path={process.env.PUBLIC_URL+ '/App/WorldInfo'}>
       <Home list={covidList} token={token}/>
       </Route>
-      <Route exact path='/'>
+      <Route exact path={process.env.PUBLIC_URL+ '/'}>
       <Login  login={login}/>
       </Route>
 
-      <Route path="/App/Home">
+      <Route path={process.env.PUBLIC_URL+ "/App/Home"}>
         <LatestNotices/>
       </Route>
-      <Route path="/App/Notices">
+      <Route path={process.env.PUBLIC_URL+ "/App/Notices"}>
         <Notices/>
       </Route>
-      <Route path="/App/Profile">
+      <Route path={process.env.PUBLIC_URL+ "/App/Profile"}>
         <Profile/>
       </Route>
     </Router>
