@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import {BrowserRouter as Router,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
 import CovidDate from './CovidDate'
 import Home from './components/Home/Home'
 import Login from './components/Login/Login';
@@ -36,27 +36,31 @@ const verifyLogin =async()=>{
   return (
     
     <div className="App">
-    <Router>
-    <Route  path= {process.env.PUBLIC_URL+ '/App/'}>
+    <Router basename={process.env.PUBLIC_URL}>
+
+    
+
+    
+    <Route  path= '/App'>
       <Navigation/>
       </Route>
-      <Route  path={process.env.PUBLIC_URL+ '/App/Home'}>
+      <Route  path='/App/Home'>
       <Header/>
       </Route>
-      <Route exact path={process.env.PUBLIC_URL+ '/App/WorldInfo'}>
+      <Route exact path='/App/WorldInfo'>
       <Home list={covidList} token={token}/>
       </Route>
-      <Route exact path={process.env.PUBLIC_URL+ '/'}>
+      <Route exact path='/'>
       <Login  login={login}/>
       </Route>
 
-      <Route path={process.env.PUBLIC_URL+ "/App/Home"}>
+      <Route path="/App/Home">
         <LatestNotices/>
       </Route>
-      <Route path={process.env.PUBLIC_URL+ "/App/Notices"}>
+      <Route path="/App/Notices">
         <Notices/>
       </Route>
-      <Route path={process.env.PUBLIC_URL+ "/App/Profile"}>
+      <Route path="/App/Profile">
         <Profile/>
       </Route>
     </Router>
