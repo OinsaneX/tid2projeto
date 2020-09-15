@@ -36,9 +36,8 @@ const verifyLogin =async()=>{
   return (
     
     <div className="App">
-      <h1>hola</h1>
     <Router>
-    <Route  path= {process.env.PUBLIC_URL+ '/App'}>
+    <Route  path= {process.env.PUBLIC_URL+ '/App/'}>
       <Navigation/>
       </Route>
       <Route  path={process.env.PUBLIC_URL+ '/App/Home'}>
