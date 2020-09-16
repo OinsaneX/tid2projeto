@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router,Route} from 'react-router-dom'
 import CovidDate from './CovidDate'
 import Home from './components/Home/Home'
 import Login from './components/Login/Login';
@@ -21,7 +21,7 @@ const [token, settoken] = useState("")
 
 const login =async()=>{
   verifyLogin()
-  window.location.href='/App'
+  window.location.href= process.env.PUBLIC_URL +'/app'
 }
 const verifyLogin =async()=>{
  
@@ -35,33 +35,29 @@ const verifyLogin =async()=>{
 
   return (
     
-    <div className="App">
+    <div className="app">
       <h2>asd</h2>
-    <Router>
-
-    
-
-    
-    <Route  path= '/App'>
+    <Router basename={process.env.PUBLIC_URL}>
+    <Route  path= '/app'>
       <Navigation/>
       </Route>
-      <Route  path='/App/Home'>
+      <Route  path='/app/Home'>
       <Header/>
       </Route>
-      <Route exact path='/App/WorldInfo'>
+      <Route exact path='/app/worldInfo'>
       <Home list={covidList} token={token}/>
       </Route>
       <Route exact path='/'>
       <Login  login={login}/>
       </Route>
 
-      <Route path="/App/Home">
+      <Route path="/app/home">
         <LatestNotices/>
       </Route>
-      <Route path="/App/Notices">
+      <Route path="/app/notices">
         <Notices/>
       </Route>
-      <Route path="/App/Profile">
+      <Route path="/app/profile">
         <Profile/>
       </Route>
     </Router>
