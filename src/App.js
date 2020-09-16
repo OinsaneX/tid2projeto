@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import {BrowserRouter as Router,Route} from 'react-router-dom'
-import CovidDate from './CovidDate'
+import {HashRouter as Router,Route} from 'react-router-dom'
 import Home from './components/Home/Home'
 import Login from './components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,7 +10,6 @@ import Header from './components/Header/Header';
 import LatestNotices from './components/LatestNotices/LatestNotices';
 import Notices from './components/Notices/Notices';
 import Profile from './components/Profile/Profile';
-import ProtectedRoute from './ProtectedRoute';
 
 function App() {
 
