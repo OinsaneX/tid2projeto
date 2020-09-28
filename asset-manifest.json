@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/tid2projeto/static/css/main.72ae64e0.chunk.css",
+    "main.js": "/tid2projeto/static/js/main.cc250312.chunk.js",
+    "main.js.map": "/tid2projeto/static/js/main.cc250312.chunk.js.map",
+    "runtime-main.js": "/tid2projeto/static/js/runtime-main.165df938.js",
+    "runtime-main.js.map": "/tid2projeto/static/js/runtime-main.165df938.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/tid2projeto/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.c8afeb3e.chunk.js": "/tid2projeto/static/js/2.c8afeb3e.chunk.js",
+    "static/js/2.c8afeb3e.chunk.js.map": "/tid2projeto/static/js/2.c8afeb3e.chunk.js.map",
+    "index.html": "/tid2projeto/index.html",
+    "precache-manifest.4af758ae810dea0c4bea931fb35ec4f0.js": "/tid2projeto/precache-manifest.4af758ae810dea0c4bea931fb35ec4f0.js",
+    "service-worker.js": "/tid2projeto/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/tid2projeto/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.72ae64e0.chunk.css.map": "/tid2projeto/static/css/main.72ae64e0.chunk.css.map",
+    "static/js/2.c8afeb3e.chunk.js.LICENSE.txt": "/tid2projeto/static/js/2.c8afeb3e.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/tid2projeto/static/media/1.e6ec6ac8.jpg",
+    "static/media/2.jpg": "/tid2projeto/static/media/2.fa42c5f5.jpg",
+    "static/media/3.jpg": "/tid2projeto/static/media/3.57c1ec76.jpg",
+    "static/media/login.jpeg": "/tid2projeto/static/media/login.1703d75a.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.165df938.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.c8afeb3e.chunk.js",
+    "static/css/main.72ae64e0.chunk.css",
+    "static/js/main.cc250312.chunk.js"
+  ]
+}
